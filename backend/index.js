@@ -13,7 +13,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://book-store-mern-client-lac.vercel.app/",
+    origin: "https://book-store-mern-client-lac.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type"],
   })
