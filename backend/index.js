@@ -7,17 +7,17 @@ const app = express();
 //two methods to declare cors
 //1st method
 
-app.use(cors());
+// app.use(cors());
 
 //2nd method
 
-// app.use(
-//   cors({
-//     origin: "http://localhost:3000",
-//     methods: ["GET", "POST", "PUT", "DELETE"],
-//     allowedHeaders: ["Content-Type"],
-//   })
-// );
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type"],
+  })
+);
 //middle ware to read our request body
 app.use(express.json());
 app.get("/", (request, response) => {
