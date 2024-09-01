@@ -17,8 +17,7 @@ const EditBook = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`book-store-mern-api-roan.vercel.app
-/books/${id}`)
+      .get(`https://book-store-mern-api-roan.vercel.app/books/${id}`)
       .then((response) => {
         setTitle(response.data.title);
         setAuthor(response.data.author);
